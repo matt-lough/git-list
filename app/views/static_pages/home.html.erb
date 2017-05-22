@@ -1,0 +1,8 @@
+
+<% @repos.each do |repo| %>
+  <div class="row">
+    <h3><a href="<%= repo['html_url'] %>"><%= repo['full_name'] %></a></h3>
+    <p><%= repo['description'] %>
+    <a href="<%= repo['readme_url'] %>">Readme</a>
+  </div>
+<% end %>
